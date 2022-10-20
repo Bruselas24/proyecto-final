@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "Proyecto final de fin de curso",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bruselas24/proyecto-final.git"
+  },
+  "keywords": [
+    "proyecto-final"
+  ],
+  "author": "Bruno Torres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bruselas24/proyecto-final/issues"
+  },
+  "homepage": "https://github.com/Bruselas24/proyecto-final#readme"
+}
