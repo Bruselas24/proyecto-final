@@ -10,17 +10,17 @@
     <link rel="icon" type="image/x-icon" href="assets/Icono.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
 </head>
 
 <body class="d-flex flex-column">
     <main class="flex-shrink-0">
-        <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
                 <a class="navbar-brand" href="index.html">FastPharm</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="links">
                         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">Quienes somos</a></li>
                         <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
@@ -29,162 +29,125 @@
                 </div>
             </div>
         </nav>
-        <!-- Pricing section-->
-        <section class="bg-light py-5">
-            <div class="container px-5 my-5">
-                <div class="text-center mb-5">
-                    <h1 class="fw-bolder">Pay as you grow</h1>
-                    <p class="lead fw-normal text-muted mb-0">With our no hassle pricing plans</p>
+        <div class="container my-5">
+            <h1 class="fw-bolder text-center fs-2 my-3">Nuestras Farmacias Adheridas</h1>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card h-100">
+                        <div class="card-header text-center fs-5">Farmacity</div>
+                        <div class="card-body"><img src="assets/farmacias/farmacity.jpeg" class="img-responsive" style="width:100%" alt="Image"></div>
+                        <div class="card-footer d-flex justify-content-between align-items-center flex-wrap ">
+                            <button class="btn btn-success my-1">Información</button>
+                            <button class="btn btn-primary">Productos</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="row gx-5 justify-content-center">
-                    <!-- Pricing card free-->
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="card mb-5 mb-xl-0">
-                            <div class="card-body p-5">
-                                <div class="small text-uppercase fw-bold text-muted">Free</div>
-                                <div class="mb-3">
-                                    <span class="display-4 fw-bold">$0</span>
-                                    <span class="text-muted">/ mo.</span>
-                                </div>
-                                <ul class="list-unstyled mb-4">
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        <strong>1 users</strong>
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i> 5GB storage
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i> Unlimited public projects
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i> Community access
-                                    </li>
-                                    <li class="mb-2 text-muted">
-                                        <i class="bi bi-x"></i> Unlimited private projects
-                                    </li>
-                                    <li class="mb-2 text-muted">
-                                        <i class="bi bi-x"></i> Dedicated support
-                                    </li>
-                                    <li class="mb-2 text-muted">
-                                        <i class="bi bi-x"></i> Free linked domain
-                                    </li>
-                                    <li class="text-muted">
-                                        <i class="bi bi-x"></i> Monthly status reports
-                                    </li>
-                                </ul>
-                                <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div>
-                            </div>
+                <div class="col-sm-4">
+                    <div class="card h-100">
+                        <div class="card-header text-center fs-5">Dr. Ahorro</div>
+                        <div class="card-body"><img src="assets/farmacias/drahorro.jpeg" class="img-responsive" style="width:100%" alt="Image"></div>
+                        <div class="card-footer d-flex justify-content-between align-items-center flex-wrap ">
+                            <button class="btn btn-success my-1">Información</button>
+                            <button class="btn btn-primary">Productos</button>
                         </div>
                     </div>
-                    <!-- Pricing card pro-->
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="card mb-5 mb-xl-0">
-                            <div class="card-body p-5">
-                                <div class="small text-uppercase fw-bold">
-                                    <i class="bi bi-star-fill text-warning"></i> Pro
-                                </div>
-                                <div class="mb-3">
-                                    <span class="display-4 fw-bold">$9</span>
-                                    <span class="text-muted">/ mo.</span>
-                                </div>
-                                <ul class="list-unstyled mb-4">
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        <strong>5 users</strong>
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i> 5GB storage
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i> Unlimited public projects
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i> Community access
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i> Unlimited private projects
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i> Dedicated support
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i> Free linked domain
-                                    </li>
-                                    <li class="text-muted">
-                                        <i class="bi bi-x"></i> Monthly status reports
-                                    </li>
-                                </ul>
-                                <div class="d-grid"><a class="btn btn-primary" href="#!">Choose plan</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Pricing card enterprise-->
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="card">
-                            <div class="card-body p-5">
-                                <div class="small text-uppercase fw-bold text-muted">Enterprise</div>
-                                <div class="mb-3">
-                                    <span class="display-4 fw-bold">$49</span>
-                                    <span class="text-muted">/ mo.</span>
-                                </div>
-                                <ul class="list-unstyled mb-4">
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        <strong>Unlimited users</strong>
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i> 5GB storage
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i> Unlimited public projects
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i> Community access
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i> Unlimited private projects
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i> Dedicated support
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        <strong>Unlimited</strong> linked domains
-                                    </li>
-                                    <li class="text-muted">
-                                        <i class="bi bi-check text-primary"></i> Monthly status reports
-                                    </li>
-                                </ul>
-                                <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div>
-                            </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card h-100">
+                        <div class="card-header text-center fs-5">Anika</div>
+                        <div class="card-body"><img src="assets/farmacias/anika.jpeg" class="img-responsive" style="width:100%" alt="Image"></div>
+                        <div class="card-footer d-flex justify-content-between align-items-center flex-wrap ">
+                            <button class="btn btn-success my-1">Información</button>
+                            <button class="btn btn-primary">Productos</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <!-- Footer-->
-    <footer class="bg-dark py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto">
-                    <div class="small m-0 text-white">Copyright &copy; FastPharm 2022</div>
+            <div class="row my-3">
+                <div class="col-sm-4">
+                    <div class="card h-100">
+                        <div class="card-header text-center fs-5">FarmaPlus</div>
+                        <div class="card-body"><img src="assets/farmacias/farmaplus.jpeg" class="img-responsive" style="width:100%" alt="Image"></div>
+                        <div class="card-footer d-flex justify-content-between align-items-center flex-wrap ">
+                            <button class="btn btn-success my-1">Información</button>
+                            <button class="btn btn-primary">Productos</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-auto">
-                    <a class="link-light small" href="#">Privacidad</a>
-                    <span class="text-white mx-1">&middot;</span>
-                    <a class="link-light small" href="#">Terminos y Condiciones</a>
-                    <span class="text-white mx-1">&middot;</span>
-                    <a class="link-light small" href="#!">Contacto</a>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header text-center fs-5">Daneri</div>
+                        <div class="card-body"><img src="assets/farmacias/daneri.jpeg" class="img-responsive" style="width:100%" alt="Image"></div>
+                        <div class="card-footer d-flex justify-content-between align-items-center flex-wrap ">
+                            <button class="btn btn-success my-1">Información</button>
+                            <button class="btn btn-primary">Productos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card h-100">
+                        <div class="card-header text-center fs-5">Farma365</div>
+                        <div class="card-body d-flex justify-content-center align-items-center"><img src="assets/farmacias/farma365.jpeg" class="img-responsive" style="width:100%" alt="Image"></div>
+                        <div class="card-footer d-flex justify-content-between align-items-center flex-wrap ">
+                            <button class="btn btn-success my-1">Información</button>
+                            <button class="btn btn-primary">Productos</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="row my-3">
+                <div class="col-sm-4">
+                    <div class="card h-100">
+                        <div class="card-header text-center fs-5">Farmacia Santa Ana</div>
+                        <div class="card-body"><img src="assets/farmacias/santaana.jpeg" class="img-responsive" style="width:100%" alt="Image"></div>
+                        <div class="card-footer d-flex justify-content-between align-items-center flex-wrap ">
+                            <button class="btn btn-success my-1">Información</button>
+                            <button class="btn btn-primary">Productos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card h-100">
+                        <div class="card-header text-center fs-5">Farmacia Gran Botica "La Genial"</div>
+                        <div class="card-body"><img src="assets/farmacias/granbotica.jpeg" class="img-responsive" style="width:100%" alt="Image"></div>
+                        <div class="card-footer d-flex justify-content-between align-items-center flex-wrap ">
+                            <button class="btn btn-success my-1">Información</button>
+                            <button class="btn btn-primary">Productos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card h-100">
+                        <div class="card-header text-center fs-5">Farmacia Vassallo</div>
+                        <div class="card-body"><img src="assets/farmacias/vasallo.jpeg" class="img-responsive" style="width:100%" alt="Farmacia Vasallo"></div>
+                        <div class="card-footer d-flex justify-content-between align-items-center flex-wrap ">
+                            <button class="btn btn-success my-1">Información</button>
+                            <button class="btn btn-primary">Productos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto">
+                        <div class="small m-0 text-white">Copyright &copy; FastPharm 2022</div>
+                    </div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#">Privacidad</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#">Terminos y Condiciones</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!" id="contacto">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/contacto.js"></script>
+        <script src="js/farmacias.js"></script>
 </body>
 
 </html>
