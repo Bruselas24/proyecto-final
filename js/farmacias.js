@@ -1,4 +1,5 @@
 let farmaciasBtn = document.querySelectorAll('.btn-success')
+let productosBtn = document.querySelectorAll('.btn-primary')
 let farmaciasNombres = document.querySelectorAll('.card-header')
 
 farmaciasBtn.forEach((boton, index) => {
@@ -15,5 +16,12 @@ farmaciasBtn.forEach((boton, index) => {
             icon: "info",
         });
 
+    })
+
+})
+
+productosBtn.forEach(boton => {
+    boton.addEventListener('click', () => {
+        window.location.href = "productos.html";
     })
 })
